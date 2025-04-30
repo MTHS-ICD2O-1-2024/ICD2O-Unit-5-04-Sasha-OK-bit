@@ -7,11 +7,11 @@
 
 function calculaterandomnumber () {
 
-  const ageNumber = 6 || 7 || 8 || 9 || 10 || 11 || 12 || 13 || 14 || 15 || 16 || 17 || 18
+  const ageNumber = parseInt(document.getElementById('usernumber').value)
   const day= document.getElementById('option-friday').checked
   const day1= document.getElementById('option-saturday').checked
   
-  if ( (day || day1)||(ageNumber)  == true )  {
+  if (((day || day1)||(ageNumber > 6 || ageNumber < 18))  == true )  {
     document.getElementById('answer1').innerHTML =
       "<p>You can get a discount for the playplace</p>" 
   }

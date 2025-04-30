@@ -24,15 +24,22 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"></div>
   <header class="mdl-layout__header-row">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title"> Guess the Random </span>
+      <span class="mdl-layout-title"> Museum Playplace Registion </span>
     </div>
   </header>
   <main class="mdl-layout__content"></main>
   <div class="right image">
     <p>
-      Formula
-      #=?
+      Select your age and date 
     </p>
+    <div class="mdl-textfield mdl-js-textfield">
+      <!-- input pattern attribute -->
+      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="usernumber" />
+      <!-- mdl-textfield__label -->
+      <label class="mdl-textfield__label" for="usernumber"></label>
+      <!-- class "mdl-textfield__error" -->
+      <span class="mdl-textfield__error">| Enter your Age</span>
+    </div>
     <img src="./images/question-mark-symbol-dice-rolling-600nw-57736897.webp" alt="rectangle shape" />
   </div>
   <form>
