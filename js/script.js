@@ -11,7 +11,7 @@ function calculaterandomnumber () {
   const day= document.getElementById('option-friday').checked
   const day1= document.getElementById('option-saturday').checked
   
-  if (((day || day1)||(ageNumber > 6 || ageNumber < 18))  == true )  {
+  if (((day || day1)||(ageNumber > 6 || ageNumber < 18 ))  == true )  {
     document.getElementById('answer1').innerHTML =
       "<p>You can get a discount for the playplace</p>" 
   }
